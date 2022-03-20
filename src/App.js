@@ -1,22 +1,20 @@
-import logo from './logo.svg';
+import logo from './coin.png';
 import './App.css';
+import {CoinList} from "./components/CoinList.js"
 
 function App() {
+
+
   return (
+
     <div className="App">
       <header className="App-header">
+        <div className='top'>
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Coin List</h1>
+        </div>
+        
+        <CoinList />
       </header>
     </div>
   );
