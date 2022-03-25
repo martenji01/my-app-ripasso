@@ -55,6 +55,12 @@ input:hover{
   background:rgba(218, 218, 218, 0.9);
 }
 
+.containerRow{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .rowItem{
   padding: .5em;
   background: rgb(226, 225, 226);
@@ -72,8 +78,8 @@ input:hover{
   cursor: pointer;
 }
 
-.rowItem div{
-  width: 30%;
+.rowItem div, .rowItem button{
+  width: 25%;
   display: flex;
   text-align: center;
   align-items: center;
@@ -84,10 +90,40 @@ input:hover{
   justify-content: center;
 }
 
-.rowItem div + div + div{
-  justify-content: flex-end;
+.rowItem button{
+  justify-content: center;
+  text-align: center;
+  padding: .5em;
+  border-radius: 7px;
 }
 
 .rowItem:hover{
   background: #fff;
+}
+
+.rowDetails{
+  width: calc(70% - .5em);
+  padding-left: .5em;
+  padding-right: .5em;
+  background:rgba(218, 218, 218, 1);
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  margin-top: -0.5em;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-white{
+  width: calc(70% - .5em);
+  background:rgba(218, 218, 218, 0.438);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .5em;
+}
+
+.chart-set{
+  margin-top: 1em;
 }
